@@ -1,0 +1,190 @@
+# Oligarchy — shell surfaces
+#
+# THE SIGNATURE
+#
+#   Every surface that is selected, focused, or demanding attention carries
+#   a 4px champagne edge on its LEFT side, with hairlines elsewhere. Menu
+#   rows, launcher results, notifications, the lock field, polkit prompts.
+#   One detail, repeated without exception. It is the stitch line.
+#
+# THE LIGHT
+#
+#   Gradient borders run 135deg, bright stop first — the same vector the
+#   window borders are struck at, and the same angle the wallpaper is lit
+#   from.
+#
+# THE BUDGET
+#
+#   Champagne is spent on focus, selection, and urgency. Resting surfaces
+#   are neutral charcoal at low border alpha. A surface that is doing
+#   nothing does not get gold.
+#
+# State colors use palette role names where the role is the real intent, so
+# retuning colors.toml moves the whole system at once.
+
+# --------------------------------------------------------------- spacing
+#
+# Supercars are not cramped. A little more air than default everywhere, and
+# the scale follows the type so proportions never break.
+
+[spacing]
+scale           = 1.12
+scale-with-font = true
+panel-padding   = 20
+popup-padding   = 16
+row-gap         = 8
+
+# ------------------------------------------------------------ typography
+#
+# base-size 13 for a roomier body. Display sizes are pinned larger than the
+# scale alone would give, so the lock clock and headings carry real weight
+# against the empty space.
+
+[font]
+base-size     = 13
+heading       = 19
+display       = 28
+display-large = 38
+
+# ------------------------------------------------------------------- bar
+
+[bar]
+scale-with-font = true
+size-horizontal = 30
+size-vertical   = 32
+background      = "#0d0f11"
+border          = "rgba(e6cd9a55) rgba(a8813f22) 135deg"
+border-alpha    = 0.9
+border-width    = "0 0 1 0"
+
+# -------------------------------------------------------------- controls
+#
+# Shared button and dropdown chrome across the four real states. Resting
+# controls are muted and nearly borderless. Champagne arrives on contact.
+
+[controls]
+normal-color        = "foreground"
+normal-fill-alpha   = 0.06
+normal-border       = "#4a4f57"
+normal-border-width = 1
+normal-border-alpha = 0.35
+
+hover-cursor-color        = "accent"
+hover-cursor-fill-alpha   = 0.14
+hover-cursor-border       = "accent"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.55
+
+# Focus is deliberately louder than hover. Keyboard users get the edge.
+focus-color        = "accent"
+focus-fill-alpha   = 0.18
+focus-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+focus-border-width = "1 1 1 4"
+focus-border-alpha = 1.0
+
+selected-color        = "accent"
+selected-fill-alpha   = 0.16
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+selected-border-width = "1 1 1 4"
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.26
+selection-fill-alpha = 0.30
+
+# ------------------------------------------------------------------ menu
+#
+# Clipboard and emoji share these tokens, so the signature reaches them
+# with no extra configuration.
+
+[menu]
+background            = "#0d0f11"
+border                = "#23262a"
+border-alpha          = 0.85
+border-width          = 1
+selected-color        = "accent"
+selected-fill-alpha   = 0.16
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+selected-border-width = "1 1 1 4"
+selected-border-alpha = 1.0
+
+# -------------------------------------------------------------- launcher
+
+[launcher]
+background            = "#0d0f11"
+border                = "rgba(e6cd9a44) rgba(a8813f18) 135deg"
+border-alpha          = 0.9
+border-width          = 1
+selected-color        = "accent"
+selected-fill-alpha   = 0.16
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+selected-border-width = "1 1 1 4"
+selected-border-alpha = 1.0
+
+# ---------------------------------------------------------------- popups
+#
+# Bar flyouts, dropdowns, OSD, popup cards.
+
+[popups]
+background   = "#0d0f11"
+border       = "rgba(e6cd9a3a) rgba(a8813f14) 135deg"
+border-alpha = 0.85
+border-width = 1
+
+# --------------------------------------------------------------- tooltip
+#
+# The quietest surface in the system. No gold at all.
+
+[tooltip]
+background   = "#1a1d21"
+border       = "#4a4f57"
+border-alpha = 0.4
+border-width = 1
+
+# --------------------------------------------------------- notifications
+#
+# A notification is asking for attention, so it earns the edge.
+
+[notifications]
+background        = "#0d0f11"
+border            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+border-alpha      = 0.95
+border-width      = 1
+border-width-left = 4
+
+# ------------------------------------------------------------------ lock
+#
+# The hero surface. Deepest background in the ramp, so the wallpaper reads
+# through as almost nothing and the champagne is unambiguous.
+
+[lock]
+background               = "#08090a"
+text                     = "#f4f2ee"
+placeholder              = "#4a4f57"
+border                   = "#23262a"
+border-width             = 1
+border-active            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+border-active-width-left = 4
+
+# ---------------------------------------------------------------- polkit
+#
+# The same species as the lock screen, treated alike.
+
+[polkit]
+background        = "#08090a"
+border            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+border-alpha      = 0.95
+border-width      = 1
+border-width-left = 4
+
+# ---------------------------------------------------------- image-picker
+
+[image-picker]
+background            = "#0d0f11"
+border                = "#23262a"
+border-alpha          = 0.85
+border-width          = 1
+selected-color        = "accent"
+selected-fill-alpha   = 0.16
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
+selected-border-width = "1 1 1 4"
+selected-border-alpha = 1.0

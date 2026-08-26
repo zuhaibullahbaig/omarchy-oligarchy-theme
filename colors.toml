@@ -1,0 +1,79 @@
+# Oligarchy
+#
+# Design rules. Nothing in this file breaks them.
+#
+#   1. ONE LIGHT SOURCE. Every gradient runs 135deg: light from upper left,
+#      falling to shadow lower right. The wallpaper is lit the same way.
+#   2. GOLD IS RARE. Champagne appears on focus and selection only. Every
+#      other surface is neutral. Luxury is contrast, not saturation.
+#   3. THE RAMP IS MONOTONIC. darker -> dark -> base -> lighter reads
+#      strictly darkest to lightest, so depth is never ambiguous.
+#   4. NEUTRALS ARE WARM. Every grey carries a few degrees of warmth so it
+#      sits with the gold instead of fighting it. No clinical blue-grey.
+
+mode = "dark"
+
+# ---------------------------------------------------------------- semantics
+
+# Champagne. Focus rings, selection edges, the active window border.
+accent = "#d9b779"
+
+# Selection sits in the neutral ramp, warmed toward the accent. It reads as
+# gold-lit charcoal, not as a gold block.
+selection = "#2a2419"
+
+# Comments, placeholders, dividers, disabled states. Also ANSI color8.
+muted = "#4a4f57"
+
+# --------------------------------------------------------------- backgrounds
+
+darker_background  = "#08090a"   # deepest wells: lock screen, OSD backing
+dark_background    = "#0d0f11"   # bar, popups, chrome
+background         = "#121417"   # primary surface
+lighter_background = "#1a1d21"   # raised cards, hovered rows
+
+# --------------------------------------------------------------- foregrounds
+
+dark_foreground   = "#6b7280"   # de-emphasized labels
+foreground        = "#c9ccd1"   # primary text
+light_foreground  = "#dfe2e6"   # emphasized text
+bright_foreground = "#f4f2ee"   # cursors, headings. Warm white, not #fff.
+
+# -------------------------------------------------------------- named colors
+
+# Terminal palette. Desaturated on purpose: these are lacquer and patina
+# tones, not primaries. Everything stays legible against #121417.
+
+red     = "#b4553f"
+green   = "#7d8a5c"
+yellow  = "#d9b779"
+blue    = "#6a7f96"
+magenta = "#9a7a8c"
+cyan    = "#7d9490"
+urgent  = "#c96a4f"
+
+color0  = "#1a1d21"
+color1  = "#b4553f"
+color2  = "#7d8a5c"
+color3  = "#d9b779"
+color4  = "#6a7f96"
+color5  = "#9a7a8c"
+color6  = "#7d9490"
+color7  = "#c9ccd1"
+
+color8  = "#4a4f57"
+color9  = "#c96a4f"
+color10 = "#94a06e"
+color11 = "#e6cd9a"
+color12 = "#8296ac"
+color13 = "#b092a2"
+color14 = "#95aaa6"
+color15 = "#f4f2ee"
+
+# ------------------------------------------------------------------ borders
+
+# Both stops of the active border are struck at 135deg, matching the
+# wallpaper's light. The bright stop is the lit upper edge; the dark stop is
+# the metal turning away from the light.
+hyprland_active_border   = "rgba(e6cd9aee) rgba(a8813fee) 135deg"
+hyprland_inactive_border = "rgba(23262aaa)"

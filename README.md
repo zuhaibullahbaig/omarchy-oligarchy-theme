@@ -4,6 +4,8 @@ Billionaire-grade Linux. Zero-dollar pricing.
 
 A champagne-on-charcoal theme for [Omarchy](https://omarchy.org) 4 (Quattro).
 
+![Oligarchy desktop](screenshots/desktop.png)
+
 ## Install
 
 Omarchy Menu → Install → Theme, then paste:
@@ -37,22 +39,39 @@ rhythm, and the type scale hangs off one root size. There are no arbitrary
 numbers.
 
 **One signature.** Every surface that is selected, focused, or asking for
-attention carries a 4px champagne edge on its left and hairlines elsewhere.
-Menu rows, launcher results, notifications, the clipboard, the emoji
-picker, the lock field, polkit prompts. The same detail, everywhere,
-without exception. It is the stitch line.
+attention carries a champagne left edge with hairlines elsewhere. Menu rows,
+launcher results, notifications, the clipboard, the emoji picker, the lock
+field, polkit prompts. The same detail, everywhere, without exception.
+
+![Omarchy menu](screenshots/menu.png)
+
+The terminal is the one room allowed to be loud. Its palette is saturated
+enough to carry `ls` output, syntax highlighting, and btop gauges, while the
+shell chrome around it stays neutral.
 
 ## What it themes
 
 | Layer | File |
 | --- | --- |
-| Palette, terminal, editors, btop, borders | `colors.toml` |
+| Palette, terminal, editors, btop, Chromium, window borders | `colors.toml` |
 | Bar, controls, menu, launcher, popups, tooltip, notifications, lock, polkit, image picker, spacing, type | `shell.toml` |
+| Theme switcher carousel | `preview.png` |
 | Boot splash mark and preview | `unlock.png`, `preview-unlock.png` |
 | File manager icons | `icons.theme` |
 | Wallpapers | `backgrounds/` |
 
-The boot splash is listed under Style → Unlock.
+The boot splash is selectable under Style → Unlock. Wallpapers cycle with
+Super + Ctrl + Space.
+
+## Backgrounds
+
+Three, all rendered from the same palette and lit from the same 135°.
+
+| File | Use |
+| --- | --- |
+| `01-oligarchy.jpg` | Default. Wordmark, full arc. |
+| `02-oligarchy-quiet.jpg` | No wordmark, dimmer arc. For daily work. |
+| `03-oligarchy-vault.jpg` | Nearly black, arc at the edge. |
 
 ## Palette
 
@@ -65,26 +84,25 @@ The boot splash is listed under Style → Unlock.
 | Muted | `#4a4f57` |
 
 The background ramp runs `#08090a` → `#0d0f11` → `#121417` → `#1a1d21`,
-strictly darkest to lightest, so depth is never ambiguous. Terminal colours
-are deliberately desaturated: lacquer and patina tones, not primaries.
+strictly darkest to lightest, so depth is never ambiguous.
 
 ## Regenerating the assets
 
-Every image ships alongside the code that made it, so the artwork can
-follow the palette instead of drifting away from it.
+Every image ships alongside the code that made it, so the artwork follows
+the palette instead of drifting away from it.
 
 ```
 python3 tools/render_assets.py
 ```
 
-Requires Pillow and NumPy. Rewrites the boot splash, the mark, and all
-three wallpapers from the constants at the top of the script.
+Requires Pillow and NumPy. Rewrites the mark, the boot splash, and all three
+wallpapers from the constants at the top of the script.
 
 ## A note on fonts
 
 Omarchy takes its shell font from the fontconfig `monospace` alias, which a
 theme cannot set. Oligarchy tunes the type *scale* instead. If you want a
-face that suits it, Berkeley Mono or Maple Mono sit well with this palette:
+face that suits it:
 
 ```
 omarchy font set "Maple Mono"

@@ -41,33 +41,35 @@ bright_foreground = "#f4f2ee"   # cursors, headings. Warm white, not #fff.
 
 # -------------------------------------------------------------- named colors
 
-# Terminal palette. Desaturated on purpose: these are lacquer and patina
-# tones, not primaries. Everything stays legible against #121417.
+# Terminal and syntax palette. Warm lacquer and patina tones rather than
+# primaries, but saturated enough to do real work: these carry ls output,
+# syntax highlighting, btop gauges, and diff colors. The shell chrome stays
+# neutral so the terminal can be the loud room in a quiet house.
 
-red     = "#b4553f"
-green   = "#7d8a5c"
-yellow  = "#d9b779"
-blue    = "#6a7f96"
-magenta = "#9a7a8c"
-cyan    = "#7d9490"
-urgent  = "#c96a4f"
+red     = "#d1603f"
+green   = "#9fb56a"
+yellow  = "#e8c274"
+blue    = "#7d9ec4"
+magenta = "#c08fa8"
+cyan    = "#7fbdb2"
+urgent  = "#e0724d"
 
 color0  = "#1a1d21"
-color1  = "#b4553f"
-color2  = "#7d8a5c"
-color3  = "#d9b779"
-color4  = "#6a7f96"
-color5  = "#9a7a8c"
-color6  = "#7d9490"
+color1  = "#d1603f"
+color2  = "#9fb56a"
+color3  = "#e8c274"
+color4  = "#7d9ec4"
+color5  = "#c08fa8"
+color6  = "#7fbdb2"
 color7  = "#c9ccd1"
 
 color8  = "#4a4f57"
-color9  = "#c96a4f"
-color10 = "#94a06e"
-color11 = "#e6cd9a"
-color12 = "#8296ac"
-color13 = "#b092a2"
-color14 = "#95aaa6"
+color9  = "#e87e5c"
+color10 = "#b8cc82"
+color11 = "#f2d590"
+color12 = "#9bb8dc"
+color13 = "#d6a8c0"
+color14 = "#9ad4c9"
 color15 = "#f4f2ee"
 
 # ------------------------------------------------------------------ borders

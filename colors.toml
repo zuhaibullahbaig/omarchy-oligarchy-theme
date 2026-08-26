@@ -19,32 +19,32 @@ mode = "dark"
 # ---------------------------------------------------------------- semantics
 
 # Champagne, at full strength. Focus rings, selection, active borders.
-accent = "#f0c463"
+accent = "#ffc84d"
 
 # Selection: gold-lit charcoal, warm enough to read as the same material as
 # the accent without becoming a gold block.
-selection = "#33291a"
+selection = "#3a2e17"
 
 # Comments, placeholders, dividers, disabled states. Also ANSI color8. Kept
 # light enough that comments are actually readable.
-muted = "#5a616b"
+muted = "#737c8a"
 
 # --------------------------------------------------------------- backgrounds
 
 # Deeper and higher-contrast than a typical charcoal, so the vivid terminal
 # colors below have somewhere to sit and stay sharp.
 
-darker_background  = "#07080a"   # deepest wells: lock screen, OSD backing
-dark_background    = "#0b0d10"   # bar, popups, chrome
-background         = "#0f1114"   # primary surface
-lighter_background = "#171a1e"   # raised cards, hovered rows
+darker_background  = "#050609"   # deepest wells: lock screen, OSD backing
+dark_background    = "#080a0d"   # bar, popups, chrome
+background         = "#0a0c10"   # primary surface
+lighter_background = "#14171c"   # raised cards, hovered rows
 
 # --------------------------------------------------------------- foregrounds
 
-dark_foreground   = "#78808c"   # de-emphasized labels
-foreground        = "#d6d9de"   # primary text
-light_foreground  = "#e8eaee"   # emphasized text
-bright_foreground = "#fbf9f5"   # cursors, headings. Warm white, not #fff.
+dark_foreground   = "#7d8592"   # de-emphasized labels
+foreground        = "#e4e7ec"   # primary text
+light_foreground  = "#f0f2f5"   # emphasized text
+bright_foreground = "#fffdf8"   # cursors, headings. Warm white, not #fff.
 
 # -------------------------------------------------------------- named colors
 
@@ -52,35 +52,35 @@ bright_foreground = "#fbf9f5"   # cursors, headings. Warm white, not #fff.
 # contrast against #0f1114. These carry ls output, syntax highlighting, diff
 # markers, and btop gauges — they are working colors, not decoration.
 
-red     = "#ff6b52"
-green   = "#b8d15e"
-yellow  = "#f0c463"
-blue    = "#6fb0f0"
-magenta = "#e08ac0"
-cyan    = "#5fd4c4"
-urgent  = "#ff6b52"
+red     = "#ff5f4d"
+green   = "#c3e05c"
+yellow  = "#ffc84d"
+blue    = "#5ab9ff"
+magenta = "#ff8fd0"
+cyan    = "#3fe0cc"
+urgent  = "#ff5f4d"
 
-color0  = "#171a1e"
-color1  = "#ff6b52"
-color2  = "#b8d15e"
-color3  = "#f0c463"
-color4  = "#6fb0f0"
-color5  = "#e08ac0"
-color6  = "#5fd4c4"
-color7  = "#d6d9de"
+color0  = "#14171c"
+color1  = "#ff5f4d"
+color2  = "#c3e05c"
+color3  = "#ffc84d"
+color4  = "#5ab9ff"
+color5  = "#ff8fd0"
+color6  = "#3fe0cc"
+color7  = "#e4e7ec"
 
-color8  = "#5a616b"
-color9  = "#ff8a72"
-color10 = "#cfe57a"
-color11 = "#ffd97a"
-color12 = "#92c8ff"
-color13 = "#f5a8d8"
-color14 = "#7fe8da"
-color15 = "#fbf9f5"
+color8  = "#737c8a"
+color9  = "#ff8574"
+color10 = "#d9f086"
+color11 = "#ffdb7a"
+color12 = "#8ed0ff"
+color13 = "#ffb3e0"
+color14 = "#6ff5e4"
+color15 = "#fffdf8"
 
 # ------------------------------------------------------------------ borders
 
 # Both stops struck at 135deg, matching the wallpaper's light. The bright
 # stop is the lit upper edge; the dark stop is the metal turning away.
-hyprland_active_border   = "rgba(ffd98fee) rgba(b8863cee) 135deg"
-hyprland_inactive_border = "rgba(1c1f24aa)"
+hyprland_active_border   = "rgba(ffdd8fee) rgba(c08c33ee) 135deg"
+hyprland_inactive_border = "rgba(191c22aa)"

@@ -67,13 +67,13 @@ Super + Ctrl + Space.
 
 | Role | Value |
 | --- | --- |
-| Accent | `#f0c463` |
-| Background | `#0f1114` |
-| Foreground | `#d6d9de` |
-| Selection | `#33291a` |
-| Muted | `#5a616b` |
+| Accent | `#ffc84d` |
+| Background | `#0a0c10` |
+| Foreground | `#e4e7ec` |
+| Selection | `#3a2e17` |
+| Muted | `#737c8a` |
 
-The background ramp runs `#07080a` → `#0b0d10` → `#0f1114` → `#171a1e`,
+The background ramp runs `#050609` → `#080a0d` → `#0a0c10` → `#14171c`,
 strictly darkest to lightest, so depth is never ambiguous. The terminal
 palette is deliberately the highest-chroma thing in the system: `ls`, syntax
 highlighting, diffs and btop gauges are working colour, not decoration.
@@ -94,13 +94,10 @@ use, so the artwork cannot drift out of sync with the theme.
 
 ## A note on fonts
 
-Omarchy takes its shell font from the fontconfig `monospace` alias, which a
-theme cannot set. Oligarchy tunes the type *scale* instead. If you want a
-face that suits it:
-
-```
-omarchy font set "Maple Mono"
-```
+Omarchy takes its font from the fontconfig `monospace` alias, which a theme
+cannot set — Oligarchy tunes the type *scale* instead. Pick the face yourself
+under Style → Font. Anything with open apertures and a tall x-height suits
+this palette; Maple Mono, Berkeley Mono, and JetBrains Mono all work well.
 
 ## License
 

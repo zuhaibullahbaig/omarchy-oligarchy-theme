@@ -4,78 +4,83 @@
 #
 #   1. ONE LIGHT SOURCE. Every gradient runs 135deg: light from upper left,
 #      falling to shadow lower right. The wallpaper is lit the same way.
-#   2. GOLD IS RARE. Champagne appears on focus and selection only. Every
-#      other surface is neutral. Luxury is contrast, not saturation.
-#   3. THE RAMP IS MONOTONIC. darker -> dark -> base -> lighter reads
+#   2. GOLD IS THE CHROME, NOT THE PAINT. Champagne carries focus and
+#      selection in the shell. It is not sprayed across every surface.
+#   3. THE TERMINAL IS THE LOUD ROOM. Shell chrome stays quiet so the
+#      terminal can be vivid. Syntax, ls, diffs and btop gauges need real
+#      chroma to work, and they get it.
+#   4. THE RAMP IS MONOTONIC. darker -> dark -> base -> lighter reads
 #      strictly darkest to lightest, so depth is never ambiguous.
-#   4. NEUTRALS ARE WARM. Every grey carries a few degrees of warmth so it
-#      sits with the gold instead of fighting it. No clinical blue-grey.
+#   5. NEUTRALS ARE WARM. Every grey carries a few degrees of warmth so it
+#      sits with the gold instead of fighting it.
 
 mode = "dark"
 
 # ---------------------------------------------------------------- semantics
 
-# Champagne. Focus rings, selection edges, the active window border.
-accent = "#d9b779"
+# Champagne, at full strength. Focus rings, selection, active borders.
+accent = "#f0c463"
 
-# Selection sits in the neutral ramp, warmed toward the accent. It reads as
-# gold-lit charcoal, not as a gold block.
-selection = "#2a2419"
+# Selection: gold-lit charcoal, warm enough to read as the same material as
+# the accent without becoming a gold block.
+selection = "#33291a"
 
-# Comments, placeholders, dividers, disabled states. Also ANSI color8.
-muted = "#4a4f57"
+# Comments, placeholders, dividers, disabled states. Also ANSI color8. Kept
+# light enough that comments are actually readable.
+muted = "#5a616b"
 
 # --------------------------------------------------------------- backgrounds
 
-darker_background  = "#08090a"   # deepest wells: lock screen, OSD backing
-dark_background    = "#0d0f11"   # bar, popups, chrome
-background         = "#121417"   # primary surface
-lighter_background = "#1a1d21"   # raised cards, hovered rows
+# Deeper and higher-contrast than a typical charcoal, so the vivid terminal
+# colors below have somewhere to sit and stay sharp.
+
+darker_background  = "#07080a"   # deepest wells: lock screen, OSD backing
+dark_background    = "#0b0d10"   # bar, popups, chrome
+background         = "#0f1114"   # primary surface
+lighter_background = "#171a1e"   # raised cards, hovered rows
 
 # --------------------------------------------------------------- foregrounds
 
-dark_foreground   = "#6b7280"   # de-emphasized labels
-foreground        = "#c9ccd1"   # primary text
-light_foreground  = "#dfe2e6"   # emphasized text
-bright_foreground = "#f4f2ee"   # cursors, headings. Warm white, not #fff.
+dark_foreground   = "#78808c"   # de-emphasized labels
+foreground        = "#d6d9de"   # primary text
+light_foreground  = "#e8eaee"   # emphasized text
+bright_foreground = "#fbf9f5"   # cursors, headings. Warm white, not #fff.
 
 # -------------------------------------------------------------- named colors
 
-# Terminal and syntax palette. Warm lacquer and patina tones rather than
-# primaries, but saturated enough to do real work: these carry ls output,
-# syntax highlighting, btop gauges, and diff colors. The shell chrome stays
-# neutral so the terminal can be the loud room in a quiet house.
+# The terminal and syntax palette. High chroma, warm-biased, tuned for
+# contrast against #0f1114. These carry ls output, syntax highlighting, diff
+# markers, and btop gauges — they are working colors, not decoration.
 
-red     = "#d1603f"
-green   = "#9fb56a"
-yellow  = "#e8c274"
-blue    = "#7d9ec4"
-magenta = "#c08fa8"
-cyan    = "#7fbdb2"
-urgent  = "#e0724d"
+red     = "#ff6b52"
+green   = "#b8d15e"
+yellow  = "#f0c463"
+blue    = "#6fb0f0"
+magenta = "#e08ac0"
+cyan    = "#5fd4c4"
+urgent  = "#ff6b52"
 
-color0  = "#1a1d21"
-color1  = "#d1603f"
-color2  = "#9fb56a"
-color3  = "#e8c274"
-color4  = "#7d9ec4"
-color5  = "#c08fa8"
-color6  = "#7fbdb2"
-color7  = "#c9ccd1"
+color0  = "#171a1e"
+color1  = "#ff6b52"
+color2  = "#b8d15e"
+color3  = "#f0c463"
+color4  = "#6fb0f0"
+color5  = "#e08ac0"
+color6  = "#5fd4c4"
+color7  = "#d6d9de"
 
-color8  = "#4a4f57"
-color9  = "#e87e5c"
-color10 = "#b8cc82"
-color11 = "#f2d590"
-color12 = "#9bb8dc"
-color13 = "#d6a8c0"
-color14 = "#9ad4c9"
-color15 = "#f4f2ee"
+color8  = "#5a616b"
+color9  = "#ff8a72"
+color10 = "#cfe57a"
+color11 = "#ffd97a"
+color12 = "#92c8ff"
+color13 = "#f5a8d8"
+color14 = "#7fe8da"
+color15 = "#fbf9f5"
 
 # ------------------------------------------------------------------ borders
 
-# Both stops of the active border are struck at 135deg, matching the
-# wallpaper's light. The bright stop is the lit upper edge; the dark stop is
-# the metal turning away from the light.
-hyprland_active_border   = "rgba(e6cd9aee) rgba(a8813fee) 135deg"
-hyprland_inactive_border = "rgba(23262aaa)"
+# Both stops struck at 135deg, matching the wallpaper's light. The bright
+# stop is the lit upper edge; the dark stop is the metal turning away.
+hyprland_active_border   = "rgba(ffd98fee) rgba(b8863cee) 135deg"
+hyprland_inactive_border = "rgba(1c1f24aa)"

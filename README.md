@@ -63,28 +63,20 @@ shell chrome around it stays neutral.
 The boot splash is selectable under Style → Unlock. Wallpapers cycle with
 Super + Ctrl + Space.
 
-## Backgrounds
-
-Three, all rendered from the same palette and lit from the same 135°.
-
-| File | Use |
-| --- | --- |
-| `01-oligarchy.jpg` | Default. Wordmark, full arc. |
-| `02-oligarchy-quiet.jpg` | No wordmark, dimmer arc. For daily work. |
-| `03-oligarchy-vault.jpg` | Nearly black, arc at the edge. |
-
 ## Palette
 
 | Role | Value |
 | --- | --- |
-| Accent | `#d9b779` |
-| Background | `#121417` |
-| Foreground | `#c9ccd1` |
-| Selection | `#2a2419` |
-| Muted | `#4a4f57` |
+| Accent | `#f0c463` |
+| Background | `#0f1114` |
+| Foreground | `#d6d9de` |
+| Selection | `#33291a` |
+| Muted | `#5a616b` |
 
-The background ramp runs `#08090a` → `#0d0f11` → `#121417` → `#1a1d21`,
-strictly darkest to lightest, so depth is never ambiguous.
+The background ramp runs `#07080a` → `#0b0d10` → `#0f1114` → `#171a1e`,
+strictly darkest to lightest, so depth is never ambiguous. The terminal
+palette is deliberately the highest-chroma thing in the system: `ls`, syntax
+highlighting, diffs and btop gauges are working colour, not decoration.
 
 ## Regenerating the assets
 
@@ -95,8 +87,10 @@ the palette instead of drifting away from it.
 python3 tools/render_assets.py
 ```
 
-Requires Pillow and NumPy. Rewrites the mark, the boot splash, and all three
-wallpapers from the constants at the top of the script.
+Requires Pillow and NumPy. It draws the ring mark, the boot splash, and the
+default wallpaper from the palette constants at the top of the file — the arc
+is shaded by a Lambert term against the same 135° vector the window borders
+use, so the artwork cannot drift out of sync with the theme.
 
 ## A note on fonts
 

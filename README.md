@@ -1,104 +1,88 @@
 # Oligarchy
 
-Billionaire-grade Linux. Zero-dollar pricing.
+An [Omarchy](https://omarchy.org) theme. Near-black charcoal, champagne gold,
+and a terminal palette sharp enough to work in. Billionaire-grade Linux,
+zero-dollar pricing.
 
-A champagne-on-charcoal theme for [Omarchy](https://omarchy.org) 4 (Quattro).
+![Oligarchy](screenshots/desktop.png)
 
-![Oligarchy desktop](screenshots/desktop.png)
+![Oligarchy menu](screenshots/menu.png)
 
 ## Install
 
-Omarchy Menu → Install → Theme, then paste:
-
 ```
-https://github.com/zuhaibullahbaig/omarchy-oligarchy-theme
+omarchy theme install https://github.com/zuhaibullahbaig/omarchy-oligarchy-theme.git
 ```
 
-## The idea
+To switch to it later:
 
-Supercars are not expensive because of how much is on them. They are
-expensive because of how little disagrees. Consistent stitch pitch, even
-shut lines, switchgear that feels identical whether you touch it on the
-door or the console.
+```
+omarchy theme set oligarchy
+```
 
-So Oligarchy is not a gold theme. It is a charcoal theme with a strict gold
-budget and four rules that every surface obeys.
+Cycle the wallpapers with `omarchy theme bg next`, or open the picker with
+`omarchy theme bg-switcher`.
 
-**One light source.** Every gradient in the system runs 135°, lit from the
-upper left. The window borders, the bar's bottom edge, the focus ring on a
-dropdown, the brushed arc in the wallpaper, and the ring in the boot splash
-are all lit from the same place. Nothing contradicts it.
+## Update
 
-**Gold is rare.** Champagne appears on focus, selection, and urgency. That
-is the entire budget. Resting surfaces are neutral charcoal at low border
-alpha. A theme where gold is scarce reads expensive; a theme where
-everything is gold reads casino.
+```
+omarchy theme update
+```
 
-**One scale.** Spacing is a single multiplier over the shell's shared
-rhythm, and the type scale hangs off one root size. There are no arbitrary
-numbers.
+## Remove
 
-**One signature.** Every surface that is selected, focused, or asking for
-attention carries a champagne left edge with hairlines elsewhere. Menu rows,
-launcher results, notifications, the clipboard, the emoji picker, the lock
-field, polkit prompts. The same detail, everywhere, without exception.
+```
+omarchy theme remove oligarchy
+```
 
-![Omarchy menu](screenshots/menu.png)
+## Backgrounds
 
-The terminal is the one room allowed to be loud. Its palette is saturated
-enough to carry `ls` output, syntax highlighting, and btop gauges, while the
-shell chrome around it stays neutral.
+![Brushed arc](backgrounds/01-oligarchy.jpg)
 
-## What it themes
+`01-oligarchy.jpg`
 
-| Layer | File |
-| --- | --- |
-| Palette, terminal, editors, btop, Chromium, window borders | `colors.toml` |
-| Bar, controls, menu, launcher, popups, tooltip, notifications, lock, polkit, image picker, spacing, type | `shell.toml` |
-| Theme switcher carousel | `preview.png` |
-| Boot splash mark and preview | `unlock.png`, `preview-unlock.png` |
-| File manager icons | `icons.theme` |
-| Wallpapers | `backgrounds/` |
+![The board](backgrounds/02-oligarchy.jpg)
 
-The boot splash is selectable under Style → Unlock. Wallpapers cycle with
-Super + Ctrl + Space.
+`02-oligarchy.jpg`
+
+To add your own without touching this repo, drop images into
+`~/.config/omarchy/backgrounds/oligarchy/`.
+
+## Boot splash
+
+Ships an `unlock.png` for the encrypted-boot screen. Selectable under
+Style → Unlock.
 
 ## Palette
 
-| Role | Value |
+| | |
 | --- | --- |
-| Accent | `#ffc84d` |
-| Background | `#0a0c10` |
-| Foreground | `#e4e7ec` |
-| Selection | `#3a2e17` |
-| Muted | `#737c8a` |
+| background | `#0a0c10` |
+| dark background | `#080a0d` |
+| darker background | `#050609` |
+| lighter background | `#14171c` |
+| foreground | `#e4e7ec` |
+| accent | `#ffc84d` |
+| selection | `#3a2e17` |
+| muted | `#737c8a` |
 
-The background ramp runs `#050609` → `#080a0d` → `#0a0c10` → `#14171c`,
-strictly darkest to lightest, so depth is never ambiguous. The terminal
-palette is deliberately the highest-chroma thing in the system: `ls`, syntax
-highlighting, diffs and btop gauges are working colour, not decoration.
+| | normal | bright |
+| --- | --- | --- |
+| red | `#ff5f4d` | `#ff8574` |
+| green | `#c3e05c` | `#d9f086` |
+| yellow | `#ffc84d` | `#ffdb7a` |
+| blue | `#5ab9ff` | `#8ed0ff` |
+| magenta | `#ff8fd0` | `#ffb3e0` |
+| cyan | `#3fe0cc` | `#6ff5e4` |
 
-## Regenerating the assets
+Every gradient in the theme — window borders, the bar's edge, focus rings,
+the arc in the first wallpaper — is struck at 135°, lit from the upper left.
+Selected and focused surfaces carry a champagne left edge. Icons are
+`Yaru-wartybrown`.
 
-Every image ships alongside the code that made it, so the artwork follows
-the palette instead of drifting away from it.
-
-```
-python3 tools/render_assets.py
-```
-
-Requires Pillow and NumPy. It draws the ring mark, the boot splash, and the
-default wallpaper from the palette constants at the top of the file — the arc
-is shaded by a Lambert term against the same 135° vector the window borders
-use, so the artwork cannot drift out of sync with the theme.
-
-## A note on fonts
-
-Omarchy takes its font from the fontconfig `monospace` alias, which a theme
-cannot set — Oligarchy tunes the type *scale* instead. Pick the face yourself
-under Style → Font. Anything with open apertures and a tall x-height suits
-this palette; Maple Mono, Berkeley Mono, and JetBrains Mono all work well.
+Fonts are set by you, not the theme: Style → Font.
 
 ## License
 
-MIT
+Theme files are MIT (see `LICENSE`). Wallpapers are free to use and
+redistribute with the theme.

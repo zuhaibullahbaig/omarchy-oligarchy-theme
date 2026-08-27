@@ -1,12 +1,16 @@
 # Oligarchy
 
+*The theme she told you not to worry about.*
+
 An [Omarchy](https://omarchy.org) theme. Near-black charcoal, champagne gold,
 and a terminal palette sharp enough to work in. Billionaire-grade Linux,
-zero-dollar pricing.
+zero-dollar pricing. Preferred by oligarchs, priced for everyone else — and
+please, don't worry about the cost. It has been taken care of.
 
-![Oligarchy](screenshots/desktop.png)
-
-![Oligarchy menu](screenshots/menu.png)
+<p align="center">
+  <img src="screenshots/desktop.png" width="49%" />
+  <img src="screenshots/menu.png" width="49%" />
+</p>
 
 ## Install
 
@@ -37,13 +41,15 @@ omarchy theme remove oligarchy
 
 ## Backgrounds
 
-![Brushed arc](backgrounds/01-oligarchy.jpg)
+<!-- backgrounds:start -->
+<img src="backgrounds/01-oligarchy.jpg" width="100%" />
 
 `01-oligarchy.jpg`
 
-![The board](backgrounds/02-oligarchy.jpg)
+<img src="backgrounds/02-oligarchy.jpg" width="100%" />
 
 `02-oligarchy.jpg`
+<!-- backgrounds:end -->
 
 To add your own without touching this repo, drop images into
 `~/.config/omarchy/backgrounds/oligarchy/`.

@@ -48,11 +48,6 @@ omarchy theme remove oligarchy
 To add your own without touching this repo, drop images into
 `~/.config/omarchy/backgrounds/oligarchy/`.
 
-## Boot splash
-
-Ships an `unlock.png` for the encrypted-boot screen. Selectable under
-Style → Unlock.
-
 ## Palette
 
 | | |

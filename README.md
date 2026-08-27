@@ -57,23 +57,23 @@ Style → Unlock.
 
 | | |
 | --- | --- |
-| background | `#0a0c10` |
-| dark background | `#080a0d` |
-| darker background | `#050609` |
-| lighter background | `#14171c` |
-| foreground | `#e4e7ec` |
-| accent | `#ffc84d` |
-| selection | `#3a2e17` |
-| muted | `#737c8a` |
+| background | `#121417` |
+| dark background | `#0d0f11` |
+| darker background | `#08090a` |
+| lighter background | `#1a1d21` |
+| foreground | `#c9ccd1` |
+| accent | `#d9b779` |
+| selection | `#2a2419` |
+| muted | `#4a4f57` |
 
 | | normal | bright |
 | --- | --- | --- |
-| red | `#ff5f4d` | `#ff8574` |
-| green | `#c3e05c` | `#d9f086` |
-| yellow | `#ffc84d` | `#ffdb7a` |
-| blue | `#5ab9ff` | `#8ed0ff` |
-| magenta | `#ff8fd0` | `#ffb3e0` |
-| cyan | `#3fe0cc` | `#6ff5e4` |
+| red | `#d1603f` | `#e07a58` |
+| green | `#9fb56a` | `#b8cc82` |
+| yellow | `#e8c274` | `#f2d590` |
+| blue | `#7d9ec4` | `#96b4d6` |
+| magenta | `#c08fa8` | `#d3a6bb` |
+| cyan | `#7fbdb2` | `#96cfc6` |
 
 Every gradient in the theme — window borders, the bar's edge, focus rings,
 the arc in the first wallpaper — is struck at 135°, lit from the upper left.

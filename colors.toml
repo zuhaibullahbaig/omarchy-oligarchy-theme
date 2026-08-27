@@ -4,83 +4,83 @@
 #
 #   1. ONE LIGHT SOURCE. Every gradient runs 135deg: light from upper left,
 #      falling to shadow lower right. The wallpaper is lit the same way.
-#   2. GOLD IS THE CHROME, NOT THE PAINT. Champagne carries focus and
-#      selection in the shell. It is not sprayed across every surface.
-#   3. THE TERMINAL IS THE LOUD ROOM. Shell chrome stays quiet so the
-#      terminal can be vivid. Syntax, ls, diffs and btop gauges need real
-#      chroma to work, and they get it.
-#   4. THE RAMP IS MONOTONIC. darker -> dark -> base -> lighter reads
+#   2. GOLD IS RARE. Champagne appears on focus and selection only. Every
+#      other surface is neutral. Luxury is contrast, not saturation.
+#   3. THE RAMP IS MONOTONIC. darker -> dark -> base -> lighter reads
 #      strictly darkest to lightest, so depth is never ambiguous.
-#   5. NEUTRALS ARE WARM. Every grey carries a few degrees of warmth so it
-#      sits with the gold instead of fighting it.
+#   4. NEUTRALS ARE WARM. Every grey carries a few degrees of warmth so it
+#      sits with the gold instead of fighting it. No clinical blue-grey.
+#   5. THE TERMINAL BELONGS TO THE SAME OBJECT. Its colors are lifted for
+#      legibility, not swapped for primaries. Nothing in the terminal is
+#      brighter or cooler than the chrome around it can live with.
 
 mode = "dark"
 
 # ---------------------------------------------------------------- semantics
 
-# Champagne, at full strength. Focus rings, selection, active borders.
-accent = "#ffc84d"
+# Champagne. Focus rings, selection edges, the active window border.
+accent = "#d9b779"
 
-# Selection: gold-lit charcoal, warm enough to read as the same material as
-# the accent without becoming a gold block.
-selection = "#3a2e17"
+# Selection sits in the neutral ramp, warmed toward the accent. It reads as
+# gold-lit charcoal, not as a gold block.
+selection = "#2a2419"
 
-# Comments, placeholders, dividers, disabled states. Also ANSI color8. Kept
-# light enough that comments are actually readable.
-muted = "#737c8a"
+# Comments, placeholders, dividers, disabled states.
+muted = "#4a4f57"
 
 # --------------------------------------------------------------- backgrounds
 
-# Deeper and higher-contrast than a typical charcoal, so the vivid terminal
-# colors below have somewhere to sit and stay sharp.
-
-darker_background  = "#050609"   # deepest wells: lock screen, OSD backing
-dark_background    = "#080a0d"   # bar, popups, chrome
-background         = "#0a0c10"   # primary surface
-lighter_background = "#14171c"   # raised cards, hovered rows
+darker_background  = "#08090a"   # deepest wells: lock screen, OSD backing
+dark_background    = "#0d0f11"   # bar, popups, chrome
+background         = "#121417"   # primary surface
+lighter_background = "#1a1d21"   # raised cards, hovered rows
 
 # --------------------------------------------------------------- foregrounds
 
-dark_foreground   = "#7d8592"   # de-emphasized labels
-foreground        = "#e4e7ec"   # primary text
-light_foreground  = "#f0f2f5"   # emphasized text
-bright_foreground = "#fffdf8"   # cursors, headings. Warm white, not #fff.
+dark_foreground   = "#6b7280"   # de-emphasized labels
+foreground        = "#c9ccd1"   # primary text
+light_foreground  = "#dfe2e6"   # emphasized text
+bright_foreground = "#f4f2ee"   # cursors, headings. Warm white, not #fff.
 
 # -------------------------------------------------------------- named colors
 
-# The terminal and syntax palette. High chroma, warm-biased, tuned for
-# contrast against #0f1114. These carry ls output, syntax highlighting, diff
-# markers, and btop gauges — they are working colors, not decoration.
+# Terminal and syntax palette. Lacquer and patina tones rather than
+# primaries — lifted just far enough to carry ls output, syntax
+# highlighting, diffs and btop gauges, and no further. Everything here is
+# warm-biased so the terminal reads as part of the same machine as the bar
+# and the menu.
 
-red     = "#ff5f4d"
-green   = "#c3e05c"
-yellow  = "#ffc84d"
-blue    = "#5ab9ff"
-magenta = "#ff8fd0"
-cyan    = "#3fe0cc"
-urgent  = "#ff5f4d"
+red     = "#d1603f"
+green   = "#9fb56a"
+yellow  = "#e8c274"
+blue    = "#7d9ec4"
+magenta = "#c08fa8"
+cyan    = "#7fbdb2"
+urgent  = "#e0724d"
 
-color0  = "#14171c"
-color1  = "#ff5f4d"
-color2  = "#c3e05c"
-color3  = "#ffc84d"
-color4  = "#5ab9ff"
-color5  = "#ff8fd0"
-color6  = "#3fe0cc"
-color7  = "#e4e7ec"
+color0  = "#1a1d21"
+color1  = "#d1603f"
+color2  = "#9fb56a"
+color3  = "#e8c274"
+color4  = "#7d9ec4"
+color5  = "#c08fa8"
+color6  = "#7fbdb2"
+color7  = "#c9ccd1"
 
-color8  = "#737c8a"
-color9  = "#ff8574"
-color10 = "#d9f086"
-color11 = "#ffdb7a"
-color12 = "#8ed0ff"
-color13 = "#ffb3e0"
-color14 = "#6ff5e4"
-color15 = "#fffdf8"
+# color8 sits a little above `muted` so comments stay readable without
+# lightening the shell's dividers and placeholders.
+color8  = "#6b7280"
+color9  = "#e07a58"
+color10 = "#b8cc82"
+color11 = "#f2d590"
+color12 = "#96b4d6"
+color13 = "#d3a6bb"
+color14 = "#96cfc6"
+color15 = "#f4f2ee"
 
 # ------------------------------------------------------------------ borders
 
 # Both stops struck at 135deg, matching the wallpaper's light. The bright
 # stop is the lit upper edge; the dark stop is the metal turning away.
-hyprland_active_border   = "rgba(ffdd8fee) rgba(c08c33ee) 135deg"
-hyprland_inactive_border = "rgba(191c22aa)"
+hyprland_active_border   = "rgba(e6cd9aee) rgba(a8813fee) 135deg"
+hyprland_inactive_border = "rgba(23262aaa)"

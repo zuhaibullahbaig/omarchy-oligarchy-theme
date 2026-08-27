@@ -52,8 +52,8 @@ display-large = 38
 scale-with-font = true
 size-horizontal = 30
 size-vertical   = 32
-background      = "#080a0d"
-border          = "rgba(ffdd8f70) rgba(c08c332a) 135deg"
+background      = "#0d0f11"
+border          = "rgba(e6cd9a55) rgba(a8813f22) 135deg"
 border-alpha    = 0.9
 border-width    = "0 0 1 0"
 
@@ -65,7 +65,7 @@ border-width    = "0 0 1 0"
 [controls]
 normal-color        = "foreground"
 normal-fill-alpha   = 0.06
-normal-border       = "#737c8a"
+normal-border       = "#4a4f57"
 normal-border-width = 1
 normal-border-alpha = 0.35
 
@@ -78,13 +78,13 @@ hover-cursor-border-alpha = 0.55
 # Focus is deliberately louder than hover. Keyboard users get the edge.
 focus-color        = "accent"
 focus-fill-alpha   = 0.18
-focus-border       = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+focus-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 focus-border-width = "1 1 1 4"
 focus-border-alpha = 1.0
 
 selected-color        = "accent"
 selected-fill-alpha   = 0.24
-selected-border       = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 selected-border-width = "1 1 1 4"
 selected-border-alpha = 1.0
 
@@ -97,26 +97,26 @@ selection-fill-alpha = 0.30
 # with no extra configuration.
 
 [menu]
-background            = "#080a0d"
-border                = "#191c22"
+background            = "#0d0f11"
+border                = "#23262a"
 border-alpha          = 0.85
 border-width          = 1
 selected-color        = "accent"
 selected-fill-alpha   = 0.24
-selected-border       = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 selected-border-width = "1 1 1 4"
 selected-border-alpha = 1.0
 
 # -------------------------------------------------------------- launcher
 
 [launcher]
-background            = "#080a0d"
-border                = "rgba(ffdd8f5e) rgba(c08c3320) 135deg"
+background            = "#0d0f11"
+border                = "rgba(e6cd9a44) rgba(a8813f18) 135deg"
 border-alpha          = 0.9
 border-width          = 1
 selected-color        = "accent"
 selected-fill-alpha   = 0.24
-selected-border       = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 selected-border-width = "1 1 1 4"
 selected-border-alpha = 1.0
 
@@ -125,8 +125,8 @@ selected-border-alpha = 1.0
 # Bar flyouts, dropdowns, OSD, popup cards.
 
 [popups]
-background   = "#080a0d"
-border       = "rgba(ffdd8f4c) rgba(c08c331c) 135deg"
+background   = "#0d0f11"
+border       = "rgba(e6cd9a3a) rgba(a8813f14) 135deg"
 border-alpha = 0.85
 border-width = 1
 
@@ -135,8 +135,8 @@ border-width = 1
 # The quietest surface in the system. No gold at all.
 
 [tooltip]
-background   = "#14171c"
-border       = "#737c8a"
+background   = "#1a1d21"
+border       = "#4a4f57"
 border-alpha = 0.4
 border-width = 1
 
@@ -145,8 +145,8 @@ border-width = 1
 # A notification is asking for attention, so it earns the edge.
 
 [notifications]
-background        = "#080a0d"
-border            = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+background        = "#0d0f11"
+border            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 border-alpha      = 0.95
 border-width      = 1
 border-width-left = 4
@@ -157,12 +157,12 @@ border-width-left = 4
 # through as almost nothing and the champagne is unambiguous.
 
 [lock]
-background               = "#050609"
-text                     = "#fffdf8"
-placeholder              = "#737c8a"
-border                   = "#191c22"
+background               = "#08090a"
+text                     = "#f4f2ee"
+placeholder              = "#4a4f57"
+border                   = "#23262a"
 border-width             = 1
-border-active            = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+border-active            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 border-active-width-left = 4
 
 # ---------------------------------------------------------------- polkit
@@ -170,8 +170,8 @@ border-active-width-left = 4
 # The same species as the lock screen, treated alike.
 
 [polkit]
-background        = "#050609"
-border            = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+background        = "#08090a"
+border            = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 border-alpha      = 0.95
 border-width      = 1
 border-width-left = 4
@@ -179,12 +179,12 @@ border-width-left = 4
 # ---------------------------------------------------------- image-picker
 
 [image-picker]
-background            = "#080a0d"
-border                = "#191c22"
+background            = "#0d0f11"
+border                = "#23262a"
 border-alpha          = 0.85
 border-width          = 1
 selected-color        = "accent"
 selected-fill-alpha   = 0.24
-selected-border       = "rgba(ffdd8fff) rgba(c08c33cc) 135deg"
+selected-border       = "rgba(e6cd9aff) rgba(a8813fcc) 135deg"
 selected-border-width = "1 1 1 4"
 selected-border-alpha = 1.0

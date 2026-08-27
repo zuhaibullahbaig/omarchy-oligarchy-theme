@@ -42,7 +42,7 @@ omarchy theme remove oligarchy
 ## Backgrounds
 
 <!-- backgrounds:start -->
-<img src="backgrounds/01-oligarchy.jpg" width="100%" />
+<img src="backgrounds/01-oligarchy-rocket.jpg" width="100%" />
 
 `01-oligarchy.jpg`
 
